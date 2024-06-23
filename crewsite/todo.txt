@@ -1,0 +1,5 @@
+download image assets
+work on about page and finish resources
+learn about python django tables
+format font, colors, etc on base.html
+how to get CSS files/how to import on base.html

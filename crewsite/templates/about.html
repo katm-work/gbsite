@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h3>About</h3>
+
+<div class="content">
+    Tovkezeera is a crew/guild for the Granblue Fantasy browser/mobile game.
+    <div class="body">
+        <ul>
+            {% for title in about_officers %}
+                <li><h3>{{title}}</h3></li>
+                    <ul>
+                        {% for officer_list in about_officers.values %}
+                            {% for officer in officer_list %}
+                                <li>{{officer}}</li>
+                            {% endfor %}
+                        {% endfor %}
+                    </ul>
+            {% endfor %}
+            {% for title in about_rules %}
+                <li><h3>{{title}}</h3></li>
+                    <ul>
+                        {% for rule_info in about_rules.values %}
+                            {% for rulehead, rules in rule_info.items %}
+                                <li><h4>{{rulehead}}</h4></li>
+                                <ul>{% for item in rules %}
+                                        {% if item == "Miss 3 GW during the year and you are likely to be kicked out." %}
+                                            <li style= "color: red;">{{item}}</li>
+                                        {% else %}
+                                            <li>{{item}}</li>
+                                        {% endif %}
+                                    {% endfor %}
+                                </ul>
+                            {% endfor %}
+                        {% endfor %}
+                    </ul>
+            
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+
+{% endblock %}

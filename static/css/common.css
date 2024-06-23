@@ -1,0 +1,45 @@
+.content {
+    border-style: double;
+    padding: 1vmax;
+    display: grid;
+    justify-content: center;
+    font-size: large;
+    font-weight: bold;
+    color: white;
+    border-color:aliceblue;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.body {
+    
+    border-style: solid;
+    display: inline-flex;
+    justify-self: center;
+    margin: 2vmax;
+    height:90vh;
+    width: 66vw;
+    font-size: large;
+    font-weight: bold;
+    color: white;
+    border-color:aliceblue;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+body {
+    background-image: url("../images/zeroguessr.jpg");
+    background-repeat: space;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+}
+
+a{
+    color: blue;
+    font-weight:normal;
+    text-shadow:none;
+}
+
+navbar{
+    
+}
